@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<title>WHEY PROTEIN</title>
+</head>
+<style>
+    .image1{
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    margin-top: 30px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 40px;
+}
+.card {
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card a {
+  margin-top: 30px;
+  font-size: 18px;
+}
+a:link {
+  text-decoration: none;
+  border-bottom: none;
+  margin-top: 5px;
+}
+
+.estrela{
+    margin-top: -15px;
+    align-items: center;
+    text-align: center;
+}
+.vantagem{
+  margin-top: 25px;
+}
+.text{
+  margin-top: 20px;
+}
+.title{
+  text-align: center;
+}
+.h1{
+  font-size: 50px;
+  margin-top: 30px;
+  color: red;
+}
+  .h3{
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+.search-container{
+        
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+    .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  flex-basis: 20%;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.num{
+    font-size: 15px;
+}
+input#searchInput{
+  margin: 0 auto;
+  width: 35%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #9b9997;
+  outline: none;
+  border-radius: 50px;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+ul{
+    margin-top: 30px;
+    background-color: #D0CFCE;
+ }
+.nav-link{
+  font-size: 20px;
+}
+.nav-link {
+ position: relative;
+ text-decoration: none;
+ cursor: pointer;
+}
+.nav-link::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background-color: currentColor;
+ bottom: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+.nav-link:hover::after {
+ opacity: 1;
+}
+.buton{
+  margin: 0 auto;
+  width: 10%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+  border: 1px solid #000000;
+  transition: 0.35s ease;
+  color: #ff0000;
+  &::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+  	opacity: 0;
+   }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   } 
+ }
+</style>
+<body>
+    <div class="color">
+        <form id="searchForm" class="search-container">
+          <input type="text" id="searchInput" name="search" placeholder="Pesquise pelo suplemento" required>
+          <input type="submit" value="Pesquisar" class="buton">
+        </form>
+    <nav>
+        <ul class="nav justify-content-center" >
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);" class="nav-link" href="index.html">PÁGINA INICIAL</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="creatina.html">CREATINAS</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="whey.html">WHEY</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="pretreino.html">PRÉ-TREINOS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="barra_proteina.html">BARRAS DE PROTEÍNAS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="nutricionista.html">NUTRICIONISTA ONLINE</a>
+            </li>
+          </ul>
+    </nav>
+    <div  style="text-align: center;" >
+        <img class="image1" src="image/whey banner.png" alt="">
+    </div>
+
+   
+    <div class="container">
+       
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4 row-cols-xxl-4  g-4" id="lista-suplementos"></div>
+      </div>
+      <div class="container">
+        <hr>
+        <h2 class="vantagem">QUAIS SÃO OS EFEITOS DO WHEY PROTEIN?</h2>
+        <div class="text">
+          <p>O whey protein, derivado do soro do leite, oferece uma série de benefícios para a saúde e o desempenho físico. Primeiramente, sua rica composição de aminoácidos essenciais favorece a síntese de proteínas, sendo fundamental para a recuperação muscular pós-exercício e para o crescimento dos músculos. Além disso, a rápida absorção do whey protein contribui para a eficiente recuperação muscular, reduzindo a dor e promovendo a regeneração. Essa proteína também demonstrou impacto positivo na força e resistência muscular, sendo especialmente valiosa para atletas e praticantes de atividades físicas.</p>
+          <p>Outro aspecto relevante está relacionado ao controle do peso, já que o consumo de whey protein pode promover saciedade e preservar a massa magra durante períodos de restrição calórica. Além disso, estudos indicam que o whey protein pode melhorar fatores metabólicos, como glicemia e sensibilidade à insulina, sendo benéfico para indivíduos com diabetes tipo 2. Sua influência no sistema imunológico também não deve ser subestimada, pois o whey protein contém substâncias como imunoglobulinas e lactoferrina, fortalecendo as defesas do organismo contra infecções.</p>
+          <p>Ademais, o whey protein é uma fonte rica de aminoácidos de cadeia ramificada (BCAAs), como leucina, isoleucina e valina, essenciais para a síntese proteica e a preservação da massa muscular. Vale ressaltar que os efeitos do whey protein podem variar entre indivíduos, sendo sempre aconselhável consultar um profissional de saúde ou nutricionista antes de iniciar a suplementação. Em última análise, a inclusão adequada de proteínas na dieta deve ser parte integrante de um estilo de vida saudável, combinada com a prática regular de exercícios físicos.</p>
+        </div>
+      </div>
+    
+    <script>
+        let suplementos=[
+
+      {
+        foto: "image/35.png",
+        nome: "WHEY PROTEIN LÍQUIDO INTEGRALMEDIA",
+        valor: "R$ 13,98",
+        site: "https://www.integralmedica.com.br/my-whey-rtd/p"
+      },
+      {
+        foto: "image/22.png",
+        nome: "WHEY PROTEIN ISOLADO GROWTH 1KG",
+        valor: "R$ 144,00",
+        site: "https://www.gsuplementos.com.br/top-whey-protein-isolado-1kg-growth-supplements-p985937"
+      },
+      {
+        foto: "image/23.png",
+        nome: "BEBIDA LÁCTEA DE PROTEÍNA GROWTH",
+        valor: "R$ 6,30",
+        site: "https://www.gsuplementos.com.br/bebida-lactea-uht-de-proteinas-growth-supplements"
+      },
+      {
+        foto: "image/24.png",
+        nome: "TOP WHEY 3W MAX TITANIUM 900G",
+        valor: "R$ 167,77",
+        site: "https://www.maxtitanium.com.br/top-whey-3w-mais-performance-900g/p"
+      },
+      {
+        foto: "image/25.png",
+        nome: "100% WHEY REFIL MAX TITANIUM",
+        valor: "R$ 123,98",
+        site: "https://www.maxtitanium.com.br/-100--whey-refil-900g/p"
+      },
+      {
+        foto: "image/26.png",
+        nome: "WHEY PROTEIN VEGANO 600G MAX TITANIUM",
+        valor: "R$ 104,02",
+        site: "https://www.maxtitanium.com.br/top-vegan-protein-600g/p"
+      },
+      {
+        foto: "image/36.png",
+        nome: "WHEY PROTEIN ISOLADO E NUTRIFY 450G",
+        valor: "R$ 162,92",
+        site: "https://www.nutrify.com.br/cleanpro-whey/p"
+      },
+      {
+        foto: "image/28.png",
+        nome: "WHEY 3HD GOURMET BLACK SKULL 900G ",
+        valor: "R$ 144,30",
+        site: "https://www.blackskullusa.com.br/whey-3hd-gourmet-black-skull--900g-wpc-wpi-e-wph/p?skuId=154"
+      },
+      {
+        foto: "image/29.png",
+        nome: "WHEY PROTEIN 100% PURE PROBIOTICA 900G",
+        valor: "R$ 116,76",
+        site: "https://www.probiotica.com.br/100-pure-whey-pote-900g/p"
+      },
+      {
+        foto: "image/30.png",
+        nome: "WHEY 3HD GOURMET BLACK SKULL",
+        valor: "R$ 9,90",
+       site: "https://www.blackskullusa.com.br/whey-3hd-gourmet-garrafas-dose-unica/p?skuId=882" 
+      },
+      {
+        foto: "image/31.png",
+        nome: "WHEY PROTEIN 100% PURE REFIL PROBIOTICA",
+        valor: "R$ 111,44",
+        site: "https://www.probiotica.com.br/100-pure-whey-refil-900g/p"
+      },
+      {
+        foto: "image/32.png",
+        nome: "WHEY PROTEIN ISOLADO BLEND 900G PROBIOTICA",
+        valor: "R$ 104,02",
+        site: "https://www.probiotica.com.br/iso-protein-blend/p"
+      },
+      {
+        foto: "image/33.png",
+        nome: "WHEY PROTEIN 100% PURE CONCENTRADO INTEGRALMEDICA 1,8KG",
+        valor: "R$ 111,93",
+        site: "https://www.integralmedica.com.br/whey-100-pure-pouch/p"
+      },
+      {
+        foto: "image/34.png",
+        nome: "WHEY PROTEIN CONCENTRADO INTEGRALMEDIA 900G",
+        valor: "R$ 97,93",
+        site: "https://www.integralmedica.com.br/my-whey-po-pote/p"
+      },
+      {
+        foto: "image/21.png",
+        nome: "WHEY PROTEIN CONCENTRADO GROWTH 1KG",
+        valor: "R$ 99,00",
+        site: "https://www.gsuplementos.com.br/whey-protein-concentrado-1kg-growth-supplements-p985936"
+      },
+
+      {
+        foto: "image/27.png",
+        nome: "WHEY PROTEIN CONCENTRADO BLACK SKULL 1KG",
+        valor: "R$ 99,90",
+        site: "https://www.blackskullusa.com.br/whey-80-hd-caveira-preta/p?skuId=559"
+      },
+        ];
+        const carregarListaSuple = ()=>{
+          let  todosCardsDeSuplemento = ''; 
+          suplementos.forEach(suplemento =>{
+            let card =  `
+              <div class="col">
+                <div class="card">
+                  <img src="${suplemento.foto}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <b><h5  class="card-title text-center" >${suplemento.nome}</h5></b>
+                    <hr>
+                    <p class="card-text" style="text-align: center;">${suplemento.valor}</p>
+                    <div class="estrela">
+    <i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class="bi bi-star-fill"></i><h6 class="num">(0)</h6>
+    </div>
+    <a href=${suplemento.site}>
+    <button type="button" class="btn btn-outline-success">
+        <i style="margin-top: 5px; align-items: center; text-align: center;" class="bi bi-cart"></i>
+    </button>
+</a>                  </div>
+                </div>
+              </div>
+              `;
+              
+            todosCardsDeSuplemento += card;
+          });
+          document.getElementById('lista-suplementos').innerHTML = todosCardsDeSuplemento;
+        };
+        carregarListaSuple();
+      </script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+      </script>
+        <script>
+            // Este código adiciona um ouvinte de evento ao formulário com o ID 'searchForm'. Ele está escutando o evento de envio (submit) do formulário.
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+    
+                // isso impede o comportamento padrão do envio do formulário, que normalmente faria com que a página fosse recarregada.
+                event.preventDefault();
+    
+                // Obtém o valor do campo de entrada do formulário com o ID 'searchInput' e armazena-o na variável searchInput.
+                var searchInput = document.getElementById('searchInput').value;
+    
+    //             Usa uma declaração switch para comparar o valor de searchInput (convertido para minúsculas) com diferentes casos.
+    // Se searchInput for igual a 'creatina', redireciona a página para 'creatina.html'.
+    // Se searchInput for igual a 'whey', redireciona a página para 'whey.html'.
+    // switch vai comparar os valores 
+    // Define um caso específico. Se o valor da expressão for igual a valorX, o bloco de código correspondente a esse caso será executado.
+    // Se não houver correspondência, exibe um alerta informando 'Nenhum resultado encontrado'.
+                switch (searchInput.toLowerCase()) {
+                    case 'creatina':
+                        window.location.href = 'creatina.html';
+                        break;
+                    case 'whey':
+                        window.location.href = 'whey.html';
+                        break;
+                    case 'whey protein':
+                        window.location.href = 'whey.html';
+                        break;
+                    case 'pre-treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                        case 'barras de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteina':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                        case 'barras de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    default:
+                        alert('Nenhum resultado encontrado.');
+                }
+            });
+        </script>
+</body>
+</html>

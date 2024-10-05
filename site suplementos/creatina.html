@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<title>CREATINAS</title>
+</head>
+<style>
+    .image1{
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    margin-top: 30px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 40px;
+}
+.card {
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card a {
+  margin-top: 30px;
+  font-size: 18px;
+}
+a:link {
+  text-decoration: none;
+  border-bottom: none;
+  margin-top: 5px;
+}
+
+.estrela{
+    margin-top: -15px;
+    align-items: center;
+    text-align: center;
+}
+.vantagem{
+  margin-top: 25px;
+}
+.text{
+  margin-top: 20px;
+}
+.title{
+  text-align: center;
+}
+.h1{
+  font-size: 50px;
+  margin-top: 30px;
+  color: red;
+}
+  .h3{
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+.search-container{
+        
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+    .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  flex-basis: 20%;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.num{
+    font-size: 15px;
+}
+input#searchInput{
+  margin: 0 auto;
+  width: 35%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #9b9997;
+  outline: none;
+  border-radius: 50px;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+ul{
+    margin-top: 30px;
+    background-color: #D0CFCE;
+ }
+.nav-link{
+  font-size: 20px;
+}
+.nav-link {
+ position: relative;
+ text-decoration: none;
+ cursor: pointer;
+}
+.nav-link::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background-color: currentColor;
+ bottom: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+.nav-link:hover::after {
+ opacity: 1;
+}
+.buton{
+  margin: 0 auto;
+  width: 10%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+  border: 1px solid #000000;
+  transition: 0.35s ease;
+  color: #ff0000;
+  &::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+  	opacity: 0;
+   }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   } 
+ }
+</style>
+<body>
+    <div class="color">
+        <form id="searchForm" class="search-container">
+          <input type="text" id="searchInput" name="search" placeholder="Pesquise pelo suplemento" required>
+          <input type="submit" value="Pesquisar" class="buton">
+        </form>
+    <nav>
+        <ul class="nav justify-content-center" >
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);" class="nav-link" href="index.html">PÁGINA INICIAL</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="creatina.html">CREATINAS</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="whey.html">WHEY</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="pretreino.html">PRÉ-TREINOS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="barra_proteina.html">BARRAS DE PROTEÍNAS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="nutricionista.html">NUTRICIONISTA ONLINE</a>
+            </li>
+          </ul>
+    </nav>
+    <div  style="text-align: center;" >
+        <img class="image1" src="image/banneer creatina.png" alt="">
+    </div>
+
+   
+    <div class="container">
+       
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4 row-cols-xxl-4  g-4" id="lista-suplementos"></div>
+      </div>
+      <div class="container">
+        <hr>
+        <h2 class="vantagem">QUAL O EFEITO DA CREATINA NO CORPO?</h2>
+        <div class="text">
+          <p>A creatina é um composto natural encontrado no corpo humano, principalmente nos músculos, e desempenha um papel crucial no fornecimento de energia durante atividades de curta duração e alta intensidade. Este composto é amplamente utilizado como suplemento, especialmente por atletas e fisiculturistas, devido aos seus diversos benefícios.</p>
+          <p>Ao ser ingerida como suplemento, a creatina aumenta os níveis de fosfocreatina nos músculos, o que ajuda a regenerar o trifosfato de adenosina (ATP), a principal fonte de energia celular. Esse aumento na disponibilidade de ATP pode resultar em melhor desempenho em atividades que exigem explosões de energia, como levantamento de peso e sprints.</p>
+          <p>Além disso, a creatina pode favorecer o aumento da massa muscular, pois auxilia na retenção de água nas células musculares, promovendo um ambiente propício para o crescimento e a recuperação muscular. Estudos também sugerem que a creatina pode ter benefícios cognitivos, ajudando na função cerebral e na memória.</p>
+        </div>
+      </div>
+    
+    <script>
+        let suplementos=[
+        {
+        foto: "image/1.png",
+        nome: "CREATINA GROWTH CREAPURE 250G",
+        valor: "R$ 103,50",
+        site: "https://www.gsuplementos.com.br/creatina-250g-creapure-growth-supplements-p985824"
+      },
+      {
+        foto: "image/2.png",
+        nome: "CREATINA GROWTH CREAPURE 100G",
+        valor: "R$ 45,00",
+        site: "https://www.gsuplementos.com.br/creatina-100g-creapure-growth-supplements-p985927"
+      },
+      {
+        foto: "image/3.png",
+        nome: "CREATINA GROWTH MONOHIDRATADA 250G",
+        valor: "R$ 79,92",
+        site: "https://www.gsuplementos.com.br/creatina-monohidratada-250gr-growth-supplements-p985931"
+      },
+      {
+        foto: "image/4.png",
+        nome: "CREATINA GROWTH MONOHIDRATADA 100G",
+        valor: "R$ 40,50",
+        site: "https://www.gsuplementos.com.br/creatina-monohidratada-100gr-growth-supplements-p985930"
+      },
+      {
+        foto: "image/5.png",
+        nome: "CREATINA OPTIMUM NUTRIRION POWDER 300G",
+        valor: "R$ 144,65",
+        site: "https://www.amazon.com.br/Micronized-Creatine-Powder-300g-Nutrition/dp/B002DYIZEE"
+      },
+      {
+        foto: "image/6.png",
+        nome: "CREATINA MAX TITANIUM 300G",
+        valor: "R$ 111,44",
+        site: "https://www.maxtitanium.com.br/creatine-pote-300g/p"
+      },
+      {
+        foto: "image/7.png",
+        nome: "CREATINA MAX TITANIUM 150G",
+        valor: "R$ 66,88",
+        site: "https://www.maxtitanium.com.br/creatine-pote-150g/p"
+      },
+      {
+        foto: "image/8.png",
+        nome: "CREATINA MAX TITANIUM 120 CÁPSULA ",
+        valor: "R$ 66,88",
+        site: "https://www.maxtitanium.com.br/creatine-pote-120-capsulas/p"
+      },
+      {
+        foto: "image/9.png",
+        nome: "CREATINA UNIVERSAL NUTRITION 200G",
+        valor: "R$ 117,70",
+        site: "https://www.magazineluiza.com.br/creatina-100-pura-pote-universal-original-200g-monoidratada/p/kf51h3573g/sa/sacr/"
+      },
+      {
+        foto: "image/10.png",
+        nome: "CREATINA NUTRIFY CREAPURE 300g",
+        valor: "R$ 269,90",
+       site: "https://www.nutrify.com.br/creatine/p" 
+      },
+      {
+        foto: "image/11.png",
+        nome: "CREATINA PROBIÓTICA PURA 300G",
+        valor: "R$ 96,92",
+        site: "https://www.probiotica.com.br/creatina-300g/p"
+      },
+      {
+        foto: "image/12.png",
+        nome: "CREATINA BLACK SKULL 300G",
+        valor: "R$ 89,90",
+        site: "https://www.blackskullusa.com.br/creatine--creatina-monohidratada--300g/p"
+      },
+      {
+        foto: "image/13.png",
+        nome: "CREATINA PROBIÓTICA 100G",
+        valor: "R$ 51,96",
+        site: "https://www.probiotica.com.br/creatina-100g/p"
+      },
+      {
+        foto: "image/14.png",
+        nome: "CREATINA BLACK SKULL 100G",
+        valor: "R$ 49,90",
+        site: "https://www.blackskullusa.com.br/creator--creatina-monohidratada--100g/p"
+      },
+      {
+        foto: "image/17.png",
+        nome: "CREATINA HARDCORE INTEGRAL 300G",
+        valor: "R$ 118,92",
+        site: "https://www.integralmedica.com.br/creatina-integralmedica/p"
+      },
+      {
+        foto: "image/16.png",
+        nome: "CREATINA HARDCORE INTEGRAL 150G",
+        valor: "R$ 65,36",
+        site: "https://www.integralmedica.com.br/creatina-integralmedica/p"
+      },
+        ];
+        const carregarListaSuple = ()=>{
+          let  todosCardsDeSuplemento = ''; 
+          suplementos.forEach(suplemento =>{
+            let card =  `
+              <div class="col">
+                <div class="card">
+                  <img src="${suplemento.foto}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <b><h5  class="card-title text-center" >${suplemento.nome}</h5></b>
+                    <hr>
+                    <p class="card-text" style="text-align: center;">${suplemento.valor}</p>
+                    <div class="estrela">
+    <i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class="bi bi-star-fill"></i><h6 class="num">(0)</h6>
+    </div>
+    <a href=${suplemento.site}>
+    <button type="button" class="btn btn-outline-success">
+        <i style="margin-top: 5px; align-items: center; text-align: center;" class="bi bi-cart"></i>
+    </button>
+</a>                  </div>
+                </div>
+              </div>
+              `;
+              
+            todosCardsDeSuplemento += card;
+          });
+          document.getElementById('lista-suplementos').innerHTML = todosCardsDeSuplemento;
+        };
+        carregarListaSuple();
+      </script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+      </script>
+        <script>
+            // Este código adiciona um ouvinte de evento ao formulário com o ID 'searchForm'. Ele está escutando o evento de envio (submit) do formulário.
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+    
+                // isso impede o comportamento padrão do envio do formulário, que normalmente faria com que a página fosse recarregada.
+                event.preventDefault();
+    
+                // Obtém o valor do campo de entrada do formulário com o ID 'searchInput' e armazena-o na variável searchInput.
+                var searchInput = document.getElementById('searchInput').value;
+    
+    //             Usa uma declaração switch para comparar o valor de searchInput (convertido para minúsculas) com diferentes casos.
+    // Se searchInput for igual a 'creatina', redireciona a página para 'creatina.html'.
+    // Se searchInput for igual a 'whey', redireciona a página para 'whey.html'.
+    // switch vai comparar os valores 
+    // Define um caso específico. Se o valor da expressão for igual a valorX, o bloco de código correspondente a esse caso será executado.
+    // Se não houver correspondência, exibe um alerta informando 'Nenhum resultado encontrado'.
+                switch (searchInput.toLowerCase()) {
+                    case 'creatina':
+                        window.location.href = 'creatina.html';
+                        break;
+                    case 'whey':
+                        window.location.href = 'whey.html';
+                        break;
+                        case 'whey protein':
+                        window.location.href = 'whey.html';
+                        break;
+                    case 'pre-treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                        case 'barras de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteina':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                        case 'barras de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    default:
+                        alert('Nenhum resultado encontrado.');
+                }
+            });
+        </script>
+</body>
+</html>

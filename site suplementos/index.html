@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<title>Página de Pesquisa</title>
+</head>
+<style>
+body{
+  background-color: white;
+}
+.title{
+  text-align: center;
+}
+.h1{
+  font-size: 50px;
+  margin-top: 30px;
+  color: red;
+}
+  .h3{
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+.search-container{
+        
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+    .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  flex-basis: 20%;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.num{
+    font-size: 15px;
+}
+input#searchInput{
+  margin: 0 auto;
+  width: 35%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #9b9997;
+  outline: none;
+  border-radius: 50px;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+ .buton{
+  margin: 0 auto;
+  width: 10%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+  border: 1px solid #000000;
+  transition: 0.35s ease;
+  color: #ff0000;
+  &::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+  	opacity: 0;
+   }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   } 
+ }
+ ul{
+    margin-top: 30px;
+    background-color: #D0CFCE;
+ }
+.nav-link{
+  font-size: 20px;
+}
+.nav-link {
+ position: relative;
+ text-decoration: none;
+ cursor: pointer;
+}
+.nav-link::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background-color: currentColor;
+ bottom: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+.nav-link:hover::after {
+ opacity: 1;
+}
+.image1{
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    margin-top: 30px;
+}
+.image2{
+  height: 500px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.card-img-top{
+  height: 100px;
+}
+.meta{
+   margin-top: 40px;
+}
+.card-container{
+  border-radius: 100%;
+}
+.qual_meta{
+  margin-top: 40px;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card {
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card a {
+  margin-top: 10px;
+  font-size: 18px;
+}
+a:link {
+  text-decoration: none;
+  border-bottom: none;
+  margin-top: 5px;
+}
+.estrela{
+    margin-top: -15px;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.news .news-form-input {
+  height: 64px;
+  width: 100%;
+  max-width: 100%;
+   background-color: #fff;
+  border-radius: 28px;
+  border: none;
+  padding-left: 20px;
+}
+input[type="email" i] {
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+.news-form-input{
+  align-items: end;
+  text-align: end;
+}
+.input-email{
+  border-radius: 30px;
+  border-color: #000000;
+  height: 40px;
+  width: 300px;
+}
+.vantagem{
+  margin-top: 25px;
+}
+.text{
+  margin-top: 20px;
+}
+</style>
+<body>
+    <div class="color">
+        <form id="searchForm" class="search-container">
+          <input type="text" id="searchInput" name="search" placeholder="Pesquise pelo suplemento" required>
+          <input type="submit" value="Pesquisar" class="buton">
+        </form>
+<nav>
+    <ul class="nav justify-content-center" >
+
+        <li class="nav-item">
+          <a style="color: rgb(0, 0, 0); "class="nav-link" href="creatina.html">CREATINAS</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: rgb(0, 0, 0); "class="nav-link" href="whey.html">WHEY</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: rgb(0, 0, 0);"class="nav-link" href="pretreino.html">PRÉ-TREINOS</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: rgb(0, 0, 0);"class="nav-link" href="barra_proteina.html">BARRAS DE PROTEÍNAS</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: rgb(0, 0, 0);"class="nav-link" href="nutricionista.html">NUTRICIONISTA ONLINE</a>
+        </li>
+      </ul>
+</nav>
+    </div>
+<div  style="text-align: center;" >
+  <img class="image1" src="image/banner.png" alt="">
+</div>
+<h1 class="qual_meta">
+  QUAL É A SUA META?
+</h1>
+<div class="container">
+    <div class="card-container">
+        <a href="...">
+          <div class="card">
+            <img src="image/Blue Illustration Website Blog Banner (12).png" alt="Card 1">
+            <a href="" style="color: #000000;">SAÚDE</a>
+          </div>
+        </a>
+        <a href="creatina.html">
+          <div class="card">
+            <img src="image/força.png"Card 2">
+            <a href="" style="color: #000000;">FORÇA</a>
+          </div>
+        </a>
+        <a href="whey.html">
+          <div class="card">
+            <img src="image/ganho de massa.png" alt="Card 3">
+            <a href="" style="color: #000000;">GANHO DE MASSA</a>
+          </div>
+        </a>
+        <a href="pretreino.html">
+          <div class="card">
+            <img src="image/energia.png" alt="Card 4">
+            <a href="" style="color: #000000;">ENERGIA</a>
+          </div>
+        </a>
+      </div>
+</div>
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4 row-cols-xxl-4  g-4" id="lista-suplementos"></div>
+</div>
+<div class="image2">
+  <img src="image/banner 2.png" alt="">
+</div>
+<br><br><br>
+<div class="container">
+  <hr>
+  <h2 class="vantagem">QUAIS SÃO AS VANTAGENS DE USAR SUPLEMENTOS?</h2>
+  <div class="text">
+    <p>Na busca por ganhos musculares e desempenho físico otimizado, os suplementos desempenham um papel crucial na rotina de quem pratica musculação. Eles oferecem benefícios significativos, acelerando o processo de recuperação, promovendo o crescimento muscular e maximizando os resultados dos treinos.</p>
+    <p>Os suplementos proteicos, como whey protein, são essenciais para a construção e reparo muscular. Ricos em aminoácidos, são rapidamente absorvidos pelo corpo, fornecendo a proteína necessária para a síntese muscular pós-treino. Isso não apenas acelera a recuperação, mas também contribui para o aumento da massa magra.</p>
+    <p>Além disso, suplementos pré-treino contendo ingredientes como cafeína, creatina e beta-alanina podem melhorar o desempenho durante os exercícios, aumentando a energia, a resistência e a capacidade de suportar treinos mais intensos. Esses compostos auxiliam na maximização dos esforços durante a sessão de musculação, resultando em um treino mais eficiente.</p>
+  </div>
+</div>
+<script>
+    let suplementos=[
+      {
+        foto: "image/creatina.webp",
+        nome: "CREATINA MAX TITANIUM 300G",
+        valor: "R$ 111,44",
+        site: "https://www.maxtitanium.com.br/creatine-pote-300g/p",
+        avaliacao:"0"
+      },
+      {
+        foto: "image/shopping.webp",
+        nome: " PRÉ TREINO B.O.P.E BLACK SKULL 150G ",
+        valor: "R$ 43,90",
+        site: "https://www.blackskullusa.com.br/pre-treino-bope-150g/p?idsku=186&gad_source=1&gclid=Cj0KCQiA-62tBhDSARIsAO7twbbmcWEb_WSf0P63o5Kn34RcnebVqBp1lbBv0uw5PKh3m5bvzcsNPywaAhxFEALw_wcB",
+        avaliacao:"0"
+      },
+      {
+        foto: "image/100-whey-protein-max-titanium-sleeve-900g-morango-1.webp",
+        nome: " TOP WHEY 3W MAX TITANIUM 900G",
+        valor: "R$ 167,77",
+        site: "https://www.maxtitanium.com.br/top-whey-3w-mais-performance-900g/p?idsku=106&utm_source=v4google&utm_medium=pmax&utm_campaign=[V4][MO][PMA][GOO][GO]+Termogenicos-16275184680&utm_content=PMAX-&utm_term=&adid=&gad_source=1&gclid=Cj0KCQiA-62tBhDSARIsAO7twba62S_EeLLB4mQePY0N3VHsvvXUlkTCo2I2VRAPL3E1LDyRegMZD_oaAjhLEALw_wcB",
+        avaliacao:"0"
+      },
+      {
+        foto: "image/crea dux.webp",
+        nome: "CREATINA MONOHIDRATADA 300G",
+        valor: "R$ 199,90",
+        site: "https://www.duxnutrition.com/creatinamonohidratada-pote300g/p",
+        avaliacao:"0"
+      },
+    ];
+    const carregarListaSuple = ()=>{
+      let  todosCardsDeSuplemento = ''; 
+      suplementos.forEach(suplemento =>{
+        let card =  `
+          <div class="col">
+            <div class="card">
+              <img src="${suplemento.foto}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <b><h5  class="card-title text-center" >${suplemento.nome}</h5></b>
+                <hr>
+                <p class="card-text" style="text-align: center;">${suplemento.valor}</p>
+                <div class="estrela">
+                  <i style="color: yellow;" class= "bi bi-star-fill"></i>
+<i style="color: yellow;"  class= "bi bi-star-fill"></i>
+<i style="color: yellow;"  class= "bi bi-star-fill"></i>
+<i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class="bi bi-star-fill"></i>
+<h5 class="num">${suplemento.avaliacao}</h5></div>
+<a href=${suplemento.site}>
+    <button type="button" class="btn btn-outline-success">
+        <i style="margin-top: 5px;" class="bi bi-cart"></i>
+    </button>
+</a>              </div>
+            </div>
+          </div>
+          `;
+          
+        todosCardsDeSuplemento += card;
+      });
+      document.getElementById('lista-suplementos').innerHTML = todosCardsDeSuplemento;
+    };
+    carregarListaSuple();
+  </script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+  </script>
+    <script>
+        // Este código adiciona um ouvinte de evento ao formulário com o ID 'searchForm'. Ele está escutando o evento de envio (submit) do formulário.
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+
+            // isso impede o comportamento padrão do envio do formulário, que normalmente faria com que a página fosse recarregada.
+            event.preventDefault();
+
+            // Obtém o valor do campo de entrada do formulário com o ID 'searchInput' e armazena-o na variável searchInput.
+            var searchInput = document.getElementById('searchInput').value;
+
+//             Usa uma declaração switch para comparar o valor de searchInput (convertido para minúsculas) com diferentes casos.
+// Se searchInput for igual a 'creatina', redireciona a página para 'creatina.html'.
+// Se searchInput for igual a 'whey', redireciona a página para 'whey.html'.
+// switch vai comparar os valores 
+// Define um caso específico. Se o valor da expressão for igual a valorX, o bloco de código correspondente a esse caso será executado.
+// Se não houver correspondência, exibe um alerta informando 'Nenhum resultado encontrado'.
+            switch (searchInput.toLowerCase()) {
+                case 'creatina':
+                    window.location.href = 'creatina.html';
+                    break;
+                case 'whey':
+                    window.location.href = 'whey.html';
+                    break;
+                    case 'whey protein':
+                        window.location.href = 'whey.html';
+                        break;
+                    case 'pre-treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                        case 'barras de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteina':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                        case 'barras de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                default:
+                    alert('Nenhum resultado encontrado.');
+            }
+        });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

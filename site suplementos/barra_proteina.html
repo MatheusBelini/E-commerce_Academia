@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<title>BARRAS DE PROÍNAS</title>
+</head>
+<style>
+    .image1{
+    height: 500px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    margin-top: 30px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 40px;
+}
+.card {
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card a {
+  margin-top: 30px;
+  font-size: 18px;
+}
+a:link {
+  text-decoration: none;
+  border-bottom: none;
+  margin-top: 5px;
+}
+
+.estrela{
+    margin-top: -15px;
+    align-items: center;
+    text-align: center;
+}
+.vantagem{
+  margin-top: 25px;
+}
+.text{
+  margin-top: 20px;
+}
+.title{
+  text-align: center;
+}
+.h1{
+  font-size: 50px;
+  margin-top: 30px;
+  color: red;
+}
+  .h3{
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+.search-container{
+        
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+    .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  flex-basis: 20%;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.num{
+    font-size: 15px;
+}
+input#searchInput{
+  margin: 0 auto;
+  width: 35%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #9b9997;
+  outline: none;
+  border-radius: 50px;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   }
+ }
+ul{
+    margin-top: 30px;
+    background-color: #D0CFCE;
+ }
+.nav-link{
+  font-size: 20px;
+}
+.nav-link {
+ position: relative;
+ text-decoration: none;
+ cursor: pointer;
+}
+.nav-link::after {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background-color: currentColor;
+ bottom: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+.nav-link:hover::after {
+ opacity: 1;
+}
+.buton{
+  margin: 0 auto;
+  width: 10%;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+  border: 1px solid #000000;
+  transition: 0.35s ease;
+  color: #ff0000;
+  &::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+  	opacity: 0;
+   }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+  	  opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+  	 opacity: 0;
+     }    
+   } 
+ }
+</style>
+<body>
+    <div class="color">
+        <form id="searchForm" class="search-container">
+          <input type="text" id="searchInput" name="search" placeholder="Pesquise pelo suplemento" required>
+          <input type="submit" value="Pesquisar" class="buton">
+        </form>
+    <nav>
+        <ul class="nav justify-content-center" >
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);" class="nav-link" href="index.html">PÁGINA INICIAL</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="creatina.html">CREATINAS</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(0, 0, 0); "class="nav-link" href="whey.html">WHEY</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="pretreino.html">PRÉ-TREINOS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="barra_proteina.html">BARRAS DE PROTEÍNAS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: rgb(0, 0, 0);"class="nav-link" href="nutricionista.html">NUTRICIONISTA ONLINE</a>
+            </li>
+          </ul>
+    </nav>
+    <div  style="text-align: center;" >
+        <img class="image1" src="image/banner barra de proteina.png" alt="">
+    </div>
+
+   
+    <div class="container">
+       
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4 row-cols-xxl-4  g-4" id="lista-suplementos"></div>
+      </div>
+      <div class="container">
+        <hr>
+        <h2 class="vantagem">QUAIS AS VANTAGENS DE COMER UMA BARRA DE PROTEÍNA?</h2>
+        <div class="text">
+          <P>
+            Comer uma barra de proteína oferece uma série de vantagens para aqueles que buscam uma alimentação saudável e equilibrada. Essas barras são convenientes, pois são fáceis de transportar e podem ser consumidas em qualquer lugar, tornando-as uma opção prática para lanches rápidos. A praticidade é especialmente valiosa em meio a agendas movimentadas, permitindo que as pessoas atendam às suas necessidades nutricionais sem comprometer seu ritmo de vida.</P>
+          <P>Além da conveniência, as barras de proteína desempenham um papel crucial na promoção da saúde muscular. Elas são uma excelente fonte de proteína, um nutriente essencial para a construção e reparo dos tecidos musculares. Isso as torna particularmente benéficas para atletas, praticantes de atividades físicas e aqueles que buscam melhorar sua composição corporal. O consumo regular de barras de proteína pode ser uma estratégia eficaz para garantir a ingestão adequada desse macronutriente crucial.
+
+          </P>
+          <P>Além de sua contribuição para a saúde muscular, as barras de proteína geralmente apresentam uma combinação equilibrada de carboidratos, fibras e gorduras saudáveis. Essa composição proporciona uma fonte de energia sustentada, auxiliando na manutenção de níveis estáveis de glicose no sangue. Além disso, a presença de fibras contribui para a sensação de saciedade, o que pode ser benéfico para aqueles que estão buscando controlar o apetite e gerenciar o peso. A variedade de sabores disponíveis torna o consumo dessas barras uma experiência agradável, proporcionando benefícios nutricionais sem comprometer o prazer da alimentação.
+          </P>
+        </div>
+      </div>
+    
+    <script>
+        let suplementos=[
+        {
+        foto: "image/1 (2).png",
+        nome: "BARRA DE PROTEÍNA GOURMET BLACK SKULL C/12",
+        valor: "R$ 98,90",
+        site: "https://www.blackskullusa.com.br/barra%20prote%C3%ADna?_q=barra%20prote%C3%ADna&map=ft"
+      },
+      {
+        foto: "image/2 (2).png",
+        nome: "BARRA DE PROTEÍNA CLEANPRO BAR NUTRIFY C/10",
+        valor: "R$ 110,42",
+        site: "https://www.nutrify.com.br/cleanpro-bar/p"
+      },
+      {
+        foto: "image/3 (2).png",
+        nome: "BARRA DE PROTEÍNA VEGANPRO BAR NUTRIFY C/10",
+        valor: "R$ 110,42",
+        site: "https://www.nutrify.com.br/veganpro-bar/p"
+      },
+      {
+        foto: "image/4 (2).png",
+        nome: "BARRA DE PROTEÍNA VO2 WHEY BAR INTEGRAL MEDICA C/12",
+        valor: "R$ 60,78",
+        site: "https://www.integralmedica.com.br/vo2-protein-bar/p"
+      },
+      {
+        foto: "image/5 (2).png",
+        nome: "BARRA DE PROTEÍNA MONSTER HIGH PROBIÓTICA C/8",
+        valor: "R$ 109,63",
+        site: "https://www.probiotica.com.br/monster-high-protein-bar/p"
+      },
+      {
+        foto: "image/6 (2).png",
+        nome: "BARRA DE PROTEÍNA CRISP BAR INTEGRAL MEDICA C/12",
+        valor: "R$ 95,79",
+        site: "https://www.integralmedica.com.br/crisp-bar/p"
+      },
+      {
+        foto: "image/7 (2).png",
+        nome: "BARRA DE PROTEÍNA WHEY BAR PROBIÓTICA C/12",
+        valor: "R$ 74,29",
+        site: "https://www.probiotica.com.br/whey-bar-creamy/p"
+      },
+      {
+        foto: "image/8 (2).png",
+        nome: "BARRA DE PROTEÍNA POWER PROTEIN BAR MAX TITANIUM C/8 ",
+        valor: "R$ 118,84",
+        site: "https://www.maxtitanium.com.br/power-protein-bar-08-un/p"
+      },
+
+      {
+        foto: "image/10 (2).png",
+        nome: "BARRA DE PROTEÍNA TOP WHEY BAR MAX TITANIUM C/12",
+        valor: "R$ 54,29",
+       site: "https://www.maxtitanium.com.br/top-whey-bar-41g/p "
+      },
+      {
+        foto: "image/11 (2).png",
+        nome: "BARRA DE PROTEÍNA CRISP COM WHEY PROTEIN GROWTH C/12",
+        valor: "R$ 69,40",
+        site: "https://www.gsuplementos.com.br/crisp-protein-bar-sabor-marshmallow-growth-supplements"
+      },
+      {
+        foto: "image/12 (2).png",
+        nome: "BARRA DE PROTEÍNA VEGANA GROWTH C/12",
+        valor: "R$ 43,20",
+        site: "https://www.gsuplementos.com.br/barra-de-proteina-vegana-growth-supplements"
+      },
+      {
+        foto: "image/9 (2).png",
+        nome: "BARRA DE PROTEÍNA COM RECHEIO GROWTH C/12",
+        valor: "R$ 43,20",
+        site: "https://www.gsuplementos.com.br/barra-de-proteina-com-recheio-growth-supplements-barrinha-de-proteina"
+      },
+     
+        ];
+        const carregarListaSuple = ()=>{
+          let  todosCardsDeSuplemento = ''; 
+          suplementos.forEach(suplemento =>{
+            let card =  `
+              <div class="col">
+                <div class="card">
+                  <img src="${suplemento.foto}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <b><h5  class="card-title text-center" >${suplemento.nome}</h5></b>
+                    <hr>
+                    <p class="card-text" style="text-align: center;">${suplemento.valor}</p>
+                    <div class="estrela">
+    <i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;"  class= "bi bi-star-fill"></i><i style="color: yellow;" class= "bi bi-star-fill"></i><i style="color: yellow;"  class="bi bi-star-fill"></i><h6 class="num">(0)</h6>
+    </div>
+    <a href=${suplemento.site}>
+    <button type="button" class="btn btn-outline-success">
+        <i style="margin-top: 5px; align-items: center; text-align: center;" class="bi bi-cart"></i>
+    </button>
+</a>                  </div>
+                </div>
+              </div>
+              `;
+              
+            todosCardsDeSuplemento += card;
+          });
+          document.getElementById('lista-suplementos').innerHTML = todosCardsDeSuplemento;
+        };
+        carregarListaSuple();
+      </script>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+      </script>
+        <script>
+            // Este código adiciona um ouvinte de evento ao formulário com o ID 'searchForm'. Ele está escutando o evento de envio (submit) do formulário.
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+    
+                // isso impede o comportamento padrão do envio do formulário, que normalmente faria com que a página fosse recarregada.
+                event.preventDefault();
+    
+                // Obtém o valor do campo de entrada do formulário com o ID 'searchInput' e armazena-o na variável searchInput.
+                var searchInput = document.getElementById('searchInput').value;
+    
+    //             Usa uma declaração switch para comparar o valor de searchInput (convertido para minúsculas) com diferentes casos.
+    // Se searchInput for igual a 'creatina', redireciona a página para 'creatina.html'.
+    // Se searchInput for igual a 'whey', redireciona a página para 'whey.html'.
+    // switch vai comparar os valores 
+    // Define um caso específico. Se o valor da expressão for igual a valorX, o bloco de código correspondente a esse caso será executado.
+    // Se não houver correspondência, exibe um alerta informando 'Nenhum resultado encontrado'.
+                switch (searchInput.toLowerCase()) {
+                    case 'creatina':
+                        window.location.href = 'creatina.html';
+                        break;
+                    case 'whey':
+                        window.location.href = 'whey.html';
+                        break;
+                        case 'whey protein':
+                        window.location.href = 'whey.html';
+                        break;
+                    case 'pre-treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré-treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treinos':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pre treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'pré treino':
+                        window.location.href = 'pretreino.html';
+                        break;
+                    case 'barras de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteína':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteina':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barras de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                        case 'barras de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteínas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    case 'barra de proteinas':
+                        window.location.href = 'barra_proteina.html';
+                        break;
+                    default:
+                        alert('Nenhum resultado encontrado.');
+                }
+            });
+        </script>
+</body>
+</html>
