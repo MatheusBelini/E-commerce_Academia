@@ -30,7 +30,7 @@ Como o projeto utiliza apenas tecnologias nativas do navegador, você pode visua
 
 1.  **Clone este repositório:**
     ```bash
-    git clone [https://github.com/MatheusBelini/E-commerce_Academia.git](https://github.com/MatheusBelini/E-commerce_Academia.git)
+    https://github.com/MatheusBelini/E-commerce_Academia.git
     ```
 2.  **Acesse a pasta do projeto:**
     ```bash
